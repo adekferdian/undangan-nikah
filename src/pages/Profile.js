@@ -97,7 +97,7 @@ export default function Profile() {
                     </div>
                     <img src={gb1} alt="" id="gb1"></img>
                     <p className="first-paragraph">
-                    Hadi Putra Lagani S.E
+                    Hadi Putra L S.E
                     </p>
                     <p className="parents">
                         Putra dari:
