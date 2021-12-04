@@ -6,11 +6,11 @@ function App() {
   console.log(window.location.href);
   const name = "tes"
   return (
-    <>
+    <div>
       <Routes 
         name={name}
       />
-    </>
+    </div>
   );
 }
 
