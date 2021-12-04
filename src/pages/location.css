@@ -1,0 +1,156 @@
+
+
+@media only screen and (max-width: 667px) {
+    .location {
+        background-image: linear-gradient(to right top, #7a727a, #96838b, #b39498, #cea6a0, #e4bca7, #e3bba5, #e1bba4, #e0baa2, #caa298, #af8c8d, #92787f, #75666f);
+        position: relative;
+        height: 100vh;
+    }
+    .judul {
+        position: absolute;
+        display: flex;
+        top: 20px;
+        left: 10%;
+        justify-content: center;
+        /* margin-top: 20px; */
+    }
+    .location1 {
+        margin-top: 100px;
+    }
+    .location2 {
+        width: 90%;
+        margin-top: 50px;
+        width: 92%;
+    }
+    .lokasi {
+        font-size: 3.5rem;
+        font-family: 'Great Vibes', cursive;
+        text-decoration: underline;
+        letter-spacing: 2px;
+    }
+    #lokasi {
+        width: 60px;
+        height: 60px;
+    }
+    .divider {
+        padding: 1rem;
+    }
+    .pesta1 {
+        font-family: "Poppins";
+        font-size: 1.3rem;
+        font-weight: 850;
+        letter-spacing: 1.2px;
+        animation: animasi infinite;
+        animation-duration: 1s;
+        margin-top: 2px;
+    }
+    .pesta2 {
+        font-family: "Poppins";
+        font-size: 1.3rem;
+        font-weight: 850;
+        letter-spacing: 1.2px;
+        animation: animasi infinite;
+        animation-duration: 1s;
+        margin-top: 2px;
+        text-align: end;
+    }
+    #jarak {
+        margin-top: 20px;
+    }
+    #jarak2 {
+        margin-top: 20px;
+    }
+    #first, #second {
+        font-family: 'East Sea Dokdo', cursive;
+        font-size: 3.5rem;
+    }
+    .lokasi-1 {
+        letter-spacing: 1.5px;
+        font-size: 1.2rem;
+        font-weight: 550;
+        font-family: "Poppins";
+    }
+    .lokasi-2 {
+        letter-spacing: 1.5px;
+        font-size: 1.2rem;
+        font-weight: 550;
+        font-family: "Poppins";
+        text-align: end;
+    }
+    .direction {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+    .direction2 {
+        display: flex;
+        justify-content: end;
+        width: 82%;
+    }
+    #lihat {
+        font-size: 1.5rem;
+        padding-top: 12px;
+        font-family: "Poppins";
+        letter-spacing: 2px;
+        animation: lihat infinite;
+        animation-duration: 4s;
+        
+    }
+    #peta {
+        font-size: 1rem;
+        padding-top: 20px;
+        font-family: "Poppins";
+        letter-spacing: 2px;    
+        animation: peta infinite;
+        animation-duration: 4s;
+        padding-left: 75px;
+        
+    }
+    #peta2 {
+        font-size: 1rem;
+        padding-top: 20px;
+        font-family: "Poppins";
+        letter-spacing: 2px;    
+        animation: peta infinite;
+        animation-duration: 4s;
+        text-align: center;
+    }
+    .pin {
+        animation: putar infinite;
+        animation-duration: 4s;
+        position: absolute;
+        top: 14.5rem;
+        left: 1rem;
+    }
+    .pin2 {
+        animation: putar infinite;
+        animation-duration: 4s;
+        position: absolute;
+        top: 14.5rem;
+        right: .5rem;
+    }
+
+    #second {
+        text-align-last: end;
+    }
+    @keyframes putar {
+        50% {transform: rotateY(180deg);}
+    }
+    @keyframes lihat {
+        0% {opacity: .2;}
+        50% {opacity: 0.5;}
+        100% {opacity: 1;}
+    }
+    @keyframes peta {
+        0% {opacity: .5;}
+        50% {opacity: 1;}
+        100% {opacity: 0.2;}
+    }
+    /* @keyframes animasi {
+        0% {margin-left: -30px; opacity: 0.2;}
+        25% {margin-left: -20px;}
+        50% {margin-left: -10px;}
+        75% {margin-left: 0px;}
+        100% {margin-left: 10px; opacity: 1;}
+    } */
+}

@@ -1,0 +1,110 @@
+
+
+@media only screen and (max-width: 667px) {
+    .countdown {
+        height: 80vh;
+        position: relative;
+    }
+    .countdown-content {
+        position: absolute;
+        top: 3rem;
+    }
+    .tick {
+        width: 80%;
+        margin: auto;
+    }
+    .header {
+        position: absolute;
+        left: 10rem;
+    }
+    .img-header {
+        width: 80px;
+        height: 80px;
+    }
+    .day {
+        position: absolute;
+        left: 14rem;
+        top: 6rem;
+        display: flex;
+        font-family: 'Great Vibes', cursive;
+        font-size: 4rem;
+        letter-spacing: 4px;
+    }
+    .counting {
+        position: absolute;
+        left: 1.3rem;
+        top: 6rem;
+        width: 100%;
+        display: flex;
+        font-family: 'Great Vibes', cursive;
+        font-size: 4rem;
+        letter-spacing: 2px;
+    }
+    .title-header {
+        display: flex;
+        position: relative;
+        font-family: 'Great Vibes', cursive;
+
+    }
+    .deskripsi {
+        width: 92vw;
+        margin: auto;
+        margin-top: 10rem;
+    }
+    .isi-deskripsi {
+        padding: 30px;
+        margin-left: 15px;
+        font-family: "Poppins";
+        font-size: 1.1rem;
+        color: black;
+    }
+
+    .time {
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+        height: 15vh;
+        margin-left: 2.3rem;
+    }
+    .days {
+        width: 70px;
+        height: 70px;
+    }
+    .hours {
+        width: 70px;
+        height: 70px;
+    }
+    .minutes {
+        width: 70px;
+        height: 70px;
+    }
+    .seconds {
+        width: 70px;
+        height: 70px;
+    }
+    .titik {
+        padding-top: 10px;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .angka {
+        font-size: 3rem;
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+    .teks {
+        font-size: 1.5rem;
+        font-family: "Poppins";
+        letter-spacing: 2px;
+        font-weight: 600;
+        padding-left: 5px;
+    }
+    #hari {
+        padding-left: 10px;
+    }
+    #jam {
+        padding-left: 10px
+    }
+}

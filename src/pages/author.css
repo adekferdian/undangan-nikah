@@ -1,0 +1,40 @@
+@media only screen and (max-width: 667px) {
+    .author {
+        position: relative;
+        background: black;
+        height: 150px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        color: white;
+        margin-top: 20px;
+    }
+    .invitation {
+        text-align: center;
+        font-family: "Poppins";
+        position: absolute;
+        left: 15%;
+        top: 1rem;
+        font-size: 2rem;
+    }
+    .me {
+        font-family: 'Parisienne', cursive;
+        font-size: 2rem;
+        position: absolute;
+        top: 2.9rem;
+        left: 34%;
+    }
+    .sosmed-author {
+        position: absolute;
+        bottom: .5rem;
+        left: 35%;
+    }
+    #ig {
+        width: 40px;
+        height: 40px;
+    }
+    #wa {
+        width: 40px;
+        height: 40px;
+        margin-left: 1rem;
+    }
+}

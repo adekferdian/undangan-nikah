@@ -1,0 +1,17 @@
+@media only screen and (max-width: 667px) {
+    .closing {
+        width: 95%;
+        margin: auto;
+    }
+    .close {
+        text-align: center;
+        font-size: 1.3rem;
+        font-family: "Poppins";
+    }
+    .pengantin {
+        font-family: 'Great Vibes', cursive;
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 10px;
+    }
+}
