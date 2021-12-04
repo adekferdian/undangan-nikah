@@ -102,7 +102,44 @@
     height: 100vh;
 }
 
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 376px) and (min-width: 360px) {
+    .brand {
+        font-size: .8rem;
+        padding-bottom: 1rem;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        z-index: 2;
+    }
+    .title {
+        font-size: 1.8rem;
+        padding-bottom: 1rem;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-family: 'Great Vibes', cursive;
+        font-weight: 700px;
+        z-index: 9999;
+        animation: titleText infinite;
+        animation-duration: 5s;
+    }
+    .sub-title{
+        padding-bottom: 1rem;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        z-index: 9999;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 414px) and (min-width: 377px) {
     .brand {
         font-size: .8rem;
         padding-bottom: 1rem;

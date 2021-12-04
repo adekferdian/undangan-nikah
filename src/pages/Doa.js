@@ -6,7 +6,8 @@ import { gsap, TimelineLite, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Doa() {
+export default function Doa(props) {
+    console.log(props.lagu.current);
 
     let tl = new TimelineLite({
         scrollTrigger: {
@@ -17,8 +18,9 @@ export default function Doa() {
         }
     })
 
+    const audio = new Audio(surat)
     const handlePlay = () => {
-        const audio = new Audio(surat)
+        props.lagu.current.pause()
         audio.play()
     }
 

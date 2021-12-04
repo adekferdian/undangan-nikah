@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import bg from '../assets/1.jpeg'
-import pidio from '../assets/pidio.mp4'
+import pidio from '../assets/video-openning.mp4'
 import './home.css';
 import { gsap, TimelineLite, Power3 } from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
@@ -19,7 +19,8 @@ import Author from './Author';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home(props) {
-    const [musicOn, setMusicOn] = React.useState(false)
+    const [musicOn, setMusicOn] = React.useState("")
+    const myRef = useRef()
     let audio = new Audio(lagu)
     let tl = new TimelineLite({
         scrollTrigger: {
@@ -39,13 +40,12 @@ export default function Home(props) {
     }, [])
 
     const handlePlay = (e) => {
-        audio.play(true)
+        myRef.current.play()
         setMusicOn(true)
-        console.log('-1', audio.play());
     }
 
     const handlePause = () => {
-        console.log('--22', audio.pause());
+        myRef.current.pause()
         setMusicOn(false)
     }
     return (
@@ -55,12 +55,12 @@ export default function Home(props) {
                     className="brand">
                         The Wedding off
                 </p>
-                <h3 initial={{opacity: 0}} animate={{animationDelay: 5, opacity: 1}} className="title">Hadi and Frisca</h3>
-                <h3 initial={{opacity: 0}} animate={{animationDelay: 3, opacity: 1}} className="sub-title">12 December 2021</h3>
+                <h3  className="title">Hadi and Frisca</h3>
+                <h3  className="sub-title">12 December 2021</h3>
                 <h3 className="for">Kepada YTH</h3>
                 <h3 className="for2">{props.nama}</h3>
-                <audio id="audio">
-                    <source src={lagu} type="audio/mpeg"></source>
+                <audio ref={myRef} id="audio" src={lagu}>
+                    
                 </audio>
                 <div className="front-page">
                     <div className="intro-text">
@@ -87,7 +87,7 @@ export default function Home(props) {
                 <ProfileWanita />
             </div>
             <div className="third-page">
-                <Doa />
+                <Doa lagu={myRef} />
             </div>
             <div className="four-page">
                 <Wedding />
@@ -101,9 +101,9 @@ export default function Home(props) {
             <div className="seven-page">
                 <Kado />
             </div>
-            <div className="eight-page">
+            {/* <div className="eight-page">
                 <Ucapan />
-            </div>
+            </div> */}
             <div className="nine-page">
                 <Gallery />
             </div>

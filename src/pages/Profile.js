@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import './profile.css';
 import { gsap, TimelineLite, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import gb1 from '../assets/dadi.jpeg'
+import gb1 from '../assets/wonkpao.jpeg'
 import gb2 from '../assets/4.jpeg'
 gsap.registerPlugin(ScrollTrigger);
 
