@@ -1,7 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Great+Vibes&display=swap');
 
+@media only screen and (max-width: 366px) and (min-width: 300px) {
+    .kado {
+        height: 50.3vh;
+        width: 90%;
+        margin: auto;
+        position: relative;
+    }
+    .badan {
+        border-radius: 10px;
+        margin-top: 20px;
+        /* height: 60vh; */
+        width: 90vw;
+        height: 68vh;
+    }
+    .bg-kado {
+        background-image: url('../assets/1.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 51.3vh;
+        width: 90vw;
+        opacity: 0.2;
+        position: absolute;
+        top: 8rem;
+        left: 0em;
+        overflow: hidden;
+    }
+    .gift {
+        position: absolute;
+        z-index: 2;
+        margin-top: -3rem;
+    }
+    .kado-title {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 40px;
+        left: 2.5rem;
+    }
+    .text-title {
+        font-size: 3rem;
+        font-family: 'Great Vibes', cursive;
+        padding-left: 15px;
+        font-weight: 600;
+    }
+    .img-title {
+        width: 80px;
+        height: 80px;
+        margin-top: 7px;
+    }
+    .desc {
+        position: absolute;
+        top: 15rem;
+        font-family: "Poppins";
+        /* letter-spacing: 1px; */
+        width: 100%;
+    }
+    .line1 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .line2 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .line3 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .click {
+        z-index: 999;
+    }
+    .donate {
+        width: 60%;
+        display: flex;
+        margin: auto;
+        border: 2px solid black;
+        background: #F5DEB3;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    .img-donate {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+    }
+    .text-donate {
+        font-size: 1.2rem;
+        padding-left: 10px;
+        padding-top: 7px;
+    }
+}
 
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 667px) and (min-width: 377px) {
     .kado {
         height: 37.3vh;
         width: 90%;

@@ -74,7 +74,7 @@ export default function Countdown() {
                 </div>
                 <div className="time">
                     <div className="days">
-                        <p className="angka">{timerDays < 10 ? `0${timerDays}` : timerDays}</p>
+                        <p className="angka" id="angka-hari">{timerDays < 10 ? `0${timerDays}` : timerDays}</p>
                         <p className="teks" id="hari">Hari</p>
                     </div>
                     <p className="titik">:</p>

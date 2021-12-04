@@ -76,7 +76,7 @@ export default function ProfileWanita() {
 
     React.useEffect(() => {
         tl.fromTo('.second', {opacity: 0, scale: 0.8}, {opacity: 1, scale: 1})
-        tl2.fromTo('#gb2', {opacity: 0, scale: 0.2, y: -200, overflow: 'hidden'}, {opacity: 1, scale: 1, y: 0, overflow: 'hidden' })
+        tl2.fromTo('#gb2', {opacity: 0, scale: 0.2, x: -200, overflow: 'hidden'}, {opacity: 1, scale: 1, x: 0, overflow: 'hidden' })
         tl5.fromTo('.ig', {opacity: 0, x: '50%', overflow: 'hidden'}, {opacity: 1, x: '0%', overflow: 'hidden'})
         // tl3.fromTo('.first-paragraph', {opacity: 0, y: -200}, {opacity: 1, x: '5%', marginTop: '2rem'})
         // tl4.fromTo('.father', {opacity: 0,}, {opacity: 1})
@@ -99,7 +99,7 @@ export default function ProfileWanita() {
                         Frisca Amelia.
                     </p>
                     <p className="parents-w">
-                        Putra dari:
+                        Putri dari:
                     </p>
                     <p className="father-w">
                         Bapak Don Reflis 

@@ -20,6 +20,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Home(props) {
     const [musicOn, setMusicOn] = React.useState("")
+    const [autoPlay, setAutoplay] = React.useState(false)
     const myRef = useRef()
     let audio = new Audio(lagu)
     let tl = new TimelineLite({

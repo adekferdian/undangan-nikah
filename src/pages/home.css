@@ -102,7 +102,7 @@
     height: 100vh;
 }
 
-@media only screen and (max-width: 376px) and (min-width: 360px) {
+@media only screen and (max-width: 376px) and (min-width: 300px) {
     .brand {
         font-size: .8rem;
         padding-bottom: 1rem;
@@ -136,6 +136,77 @@
         color: black;
         z-index: 9999;
         font-size: 1rem;
+    }
+    .for {
+        padding-bottom: 1rem;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        z-index: 2;
+        font-size: 1.5rem;
+    }
+    .for2 {
+        padding-bottom: 1rem;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        z-index: 2;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    .toogle-music{
+        position: fixed;
+        bottom: 5px;
+        left: 1px;
+        z-index: 2;
+    }
+    .circle {
+    stroke-width: 10px;
+    stroke-linecap: round;
+    fill: transparent;
+    z-index: 2;
+    }
+
+    .second-page {
+        background-image: linear-gradient(to right top, #f6f1f4, #ded3d6, #c6b7b6, #ac9c95, #8f8376, #7c7064, #6a5e53, #584c42, #483b39, #352d2f, #222022, #121212);
+        height: 220vh;
+    }
+    
+    .third-page {
+        height: 55vh;
+        width: 90%;
+        margin: auto;
+        border-radius: 20px;
+    }
+    
+    .four-page {
+        height: 92vh;
+        background-image: linear-gradient(to right top, #111011, #231e20, #362c2c, #483b36, #574c40, #695e51, #7c7163, #908476, #ae9d95, #c9b8b6, #e3d5d8, #fbf3f8);
+    }
+    .fifth-page {
+        height: 100vh;
+        background-image: linear-gradient(to right top, #111011, #231e20, #362c2c, #483b36, #574c40, #695e51, #7c7163, #908476, #ae9d95, #c9b8b6, #e3d5d8, #fbf3f8);
+    }
+    .sixth-page {
+        background-image: linear-gradient(to right top, #7a727a, #96838b, #b39498, #cea6a0, #e4bca7, #e3bba5, #e1bba4, #e0baa2, #caa298, #af8c8d, #92787f, #75666f);
+    }
+    .seven-page {
+        background-image: linear-gradient(to right top, #f6f1f4, #ded3d6, #c6b7b6, #ac9c95, #8f8376, #7c7064, #6a5e53, #584c42, #483b39, #352d2f, #222022, #121212);
+        height: 60vh;
+    }
+    .eight-page {
+        background-image: linear-gradient(to right top, #111011, #231e20, #362c2c, #483b36, #574c40, #695e51, #7c7163, #908476, #ae9d95, #c9b8b6, #e3d5d8, #fbf3f8);
+    }
+
+    @keyframes titleText {
+        0% {color: red}
+        25% {color: yellow}
+        50% {color: gold}
+        100% {color: green}
     }
 }
 
@@ -199,6 +270,7 @@
         position: fixed;
         bottom: 5px;
         left: 1px;
+        z-index: 2;
     }
     .circle {
     stroke-width: 10px;

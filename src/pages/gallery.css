@@ -1,4 +1,25 @@
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 366px) and (min-width: 300px) {
+    .closing {
+        width: 95%;
+        margin: auto;
+    }
+    .close {
+        text-align: center;
+        font-size: 1.3rem;
+        font-family: "Poppins";
+    }
+    .pengantin {
+        font-family: 'Great Vibes', cursive;
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 10px;
+    }
+    .gallery {
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 667px) and (min-width: 377px) {
     .closing {
         width: 95%;
         margin: auto;
