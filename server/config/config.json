@@ -18,6 +18,11 @@
     "dialect":"postgres",
     "synchronize": true,
     "ssl": true,
+    "extra": {
+      "ssl": {
+        "rejectUnauthorized": false
+      }
+    },
     "dialectOptions": {
       "ssl": {
         "require": true
