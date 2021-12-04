@@ -23,6 +23,7 @@
     },
     "logging": false,
     "ssl": {
+      "sslmode": "require",
       "rejectUnauthorized": false
     }
   }
