@@ -3,7 +3,6 @@ import './App.css';
 import Routes from './routes/index';
 
 function App() {
-  console.log(window.location.href);
   const name = "tes"
   return (
     <div>
