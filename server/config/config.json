@@ -22,6 +22,8 @@
       }
     },
     "logging": false,
-    "ssl": true
+    "ssl": {
+      "rejectUnauthorized": false
+    }
   }
 }
