@@ -19,12 +19,6 @@ export default function Gallery() {
             image: img2
         },
         {
-            image: img3
-        },
-        {
-            image: img4
-        },
-        {
             image: img5
         },
         {

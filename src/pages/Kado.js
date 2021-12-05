@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 export default function Kado() {
-    const [copySuccess, setCopySuccess] = React.useState('');
+    const [copySuccess, setCopySuccess] = React.useState(false);
     let tl = new TimelineLite({
         scrollTrigger: {
             trigger: '.kado',
@@ -32,6 +32,10 @@ export default function Kado() {
     const handleCopy = (copyMe) => {
         console.log('masas');
     };
+
+    const handleonCopy = () => {
+        setCopySuccess(true)
+    }
         
     return (
         <div className="kado">
@@ -54,10 +58,16 @@ export default function Kado() {
                         </div> */}
                         <CopyToClipboard
                             text="542901001159506"
+                            onCopy={() => handleonCopy()}
                         >
                             <div className="donate">
                                 <img className="img-donate" src="https://img.icons8.com/material-outlined/24/000000/copy.png"/>
-                                <p className="text-donate">Copy Number</p>
+                                {
+                                    copySuccess === false ?
+                                        <p className="text-donate">Copy Number</p>
+                                        :
+                                        <p className="text-donate">Copied!</p>
+                                }
                             </div>
                         </CopyToClipboard>
                     </div>
