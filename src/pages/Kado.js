@@ -57,7 +57,7 @@ export default function Kado() {
                                 <p className="line3">542901001159506 (BRI) - Frisca Amelia</p>
                                 :
                                 <div className="donate" onClick={() => setVisibleGift(true)} style={{marginTop: 50}}>
-                                    <img className="img-donate" src="https://img.icons8.com/material-outlined/24/000000/copy.png"/>
+                                    <img className="img-donate" src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/64/000000/external-gift-valentines-day-flatart-icons-solid-flatarticons-3.png"/>
                                     <p className="text-donate">Wedding Gift!</p>
                             </div>
 
