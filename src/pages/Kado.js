@@ -10,6 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Kado() {
     const [copySuccess, setCopySuccess] = React.useState(false);
+    const [visibleGift, setVisibleGift] = React.useState(false)
     let tl = new TimelineLite({
         scrollTrigger: {
             trigger: '.kado',
@@ -51,25 +52,38 @@ export default function Kado() {
                     <div className="desc">
                         <p className="line1">Silahkan klik tombol dibawah ini untuk </p>
                         <p className="line2"> mengirimkan hadiah secara online untuk kami</p>
-                        <p className="line3">542901001159506 (BRI) - Frisca Amelia</p>
+                        {
+                            visibleGift ? 
+                                <p className="line3">542901001159506 (BRI) - Frisca Amelia</p>
+                                :
+                                <div className="donate" onClick={() => setVisibleGift(true)} style={{marginTop: 50}}>
+                                    <img className="img-donate" src="https://img.icons8.com/material-outlined/24/000000/copy.png"/>
+                                    <p className="text-donate">Wedding Gift!</p>
+                            </div>
+
+                        }
                         {/* <div className="click">
                             <img onClick={() => handleCopy()} src="https://img.icons8.com/material-outlined/24/000000/copy.png"/>
                             <p>Copy</p>
                         </div> */}
-                        <CopyToClipboard
-                            text="542901001159506"
-                            onCopy={() => handleonCopy()}
-                        >
-                            <div className="donate">
-                                <img className="img-donate" src="https://img.icons8.com/material-outlined/24/000000/copy.png"/>
-                                {
-                                    copySuccess === false ?
-                                        <p className="text-donate">Copy Number</p>
-                                        :
-                                        <p className="text-donate">Copied!</p>
-                                }
-                            </div>
-                        </CopyToClipboard>
+                        {
+                            visibleGift ?
+                                <CopyToClipboard
+                                    text="542901001159506"
+                                    onCopy={() => handleonCopy()}
+                                >
+                                    <div className="donate">
+                                        <img className="img-donate" src="https://img.icons8.com/material-outlined/24/000000/copy.png"/>
+                                        {
+                                            copySuccess === false ?
+                                                <p className="text-donate">Copy Number</p>
+                                                :
+                                                <p className="text-donate">Copied!</p>
+                                        }
+                                    </div>
+                                </CopyToClipboard>
+                                :null
+                        }
                     </div>
                         
                 </Paper>
