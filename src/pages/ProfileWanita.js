@@ -96,7 +96,7 @@ export default function ProfileWanita() {
                     </div>
                     <img src={gb2} alt="" id="gb2"></img>
                     <p className="nama-wanita">
-                        Frisca Amelia.
+                        Frisca Amelia S.I.kom
                     </p>
                     <p className="parents-w">
                         Putri dari:
