@@ -6,8 +6,23 @@
     font-family: "Poppins", sans-serif;
 }
 
+.landing-video {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+#open-btn {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    z-index: 2;
+    top: 50%;
+}
+
 .container {
-    background: url('../assets/1.jpeg');
+    /* background: url('../assets/1.jpeg'); */
     background-size: cover;
     height: 100vh;
 }

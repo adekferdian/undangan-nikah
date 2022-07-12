@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+}
+
+.wrapper-video {
+    /* position: relative; */
+    background: black;
+    height: auto;
+}
+
+.my-video {
+    background-size: contain;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.video1 {
+    width: 100%;
+    z-index: 1;
+}
+
+.button-open {
+    z-index: 2;
+}
+
+#to {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#yth {
+    margin-top: -80px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.card {
+    background: transparent;
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+    width: 25vw;
+    transform: scale(1);
+    margin: auto;
+    transition: box-shadow, transform 300ms ease-in-out 0s;
+    opacity: 1;
+}
+
+
+.bg-1 {
+    /* background: linear-gradient(135deg, #00f260, #0575e6); */
+    opacity: 0.7;
+    /* height: 20px; */
+    /* top: 10px; */
+}
+.bg-2 {
+    background: linear-gradient(135deg, #8a2387, #f27121);
+    opacity: 0.7;
+}
+.bg-3 {
+    background: linear-gradient(135deg, #3f5efb, #fc466b);
+    opacity: 0.7;
+}
+.bg-4 {
+    background: linear-gradient(135deg, #db36a4, #f7ff00);
+    opacity: 0.7;
+}
+
+.card .btn {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    max-width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    transition: box-shadow 300ms;
+    background: transparent;
+}
+
+.card .btn {
+    margin-bottom: 8px;
+}
+
+.card span {
+    transition: 0.5;
+}
+
+.card span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #fff);
+    animation: animate1 1s linear infinite;
+    animation-delay: 0.1s;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+        animation-delay: 1s;
+    }
+    100% {
+        transform: translateX(100%);
+        animation-duration: 2s;
+    }
+}
+.card span:nth-child(2) {
+    position: absolute;
+    /* top: 0; */
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #fff);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.3s;
+    /* transition-delay: 1s; */
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+.card span:nth-child(3) {
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, transparent, #fff);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.6s;
+    /* transition-delay: 1s; */
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.card span:nth-child(4) {
+    position: absolute;
+    /* top: 0; */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to top, transparent, #fff);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.9s;
+    opacity: 0;
+    /* transition-delay: 1s; */
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@media only screen and (max-width: 810px) and (min-width: 748px) {
+    #to {
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 5px;
+        /* text-transform: uppercase; */
+        margin-bottom: 10px;
+    }
+    
+    #yth {
+        margin-top: -70px;
+        color: red;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 747px) and (min-width: 700px) {
+    #to {
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 5px;
+        /* text-transform: uppercase; */
+        margin-bottom: 10px;
+    }
+    
+    #yth {
+        margin-top: -70px;
+        font-size: 20px;
+    }
+
+    #text-undangan {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 699px) and (min-width: 558px) {
+    #to {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 5px;
+        /* text-transform: uppercase; */
+        margin-bottom: 10px;
+    }
+    
+    #yth {
+        margin-top: -50px;
+        font-size: 15px;
+    }
+
+    #text-undangan {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 557px) and (min-width: 400px) {
+    #to {
+        color: white;
+        text-align: center;
+        font-size: 17px;
+        margin-top: 5px;
+        /* text-transform: uppercase; */
+        margin-bottom: 10px;
+    }
+    
+    #yth {
+        margin-top: -40px;
+        font-size: 13px;
+    }
+
+    #text-undangan {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 399px) and (min-width: 250px) {
+    #to {
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 5px;
+        /* text-transform: uppercase; */
+        margin-bottom: 10px;
+    }
+    
+    #yth {
+        margin-top: -20px;
+        font-size: 11px;
+    }
+
+    #text-undangan {
+        font-size: 11px;
+    }
+}

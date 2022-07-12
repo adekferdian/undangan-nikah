@@ -19,9 +19,10 @@ import Author from './Author';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home(props) {
-    const [musicOn, setMusicOn] = React.useState("")
-    const [autoPlay, setAutoplay] = React.useState(false)
-    const myRef = useRef()
+    const [musicOn, setMusicOn] = React.useState("");
+    const [autoPlay, setAutoplay] = React.useState(false);
+    const myRef = useRef();
+    const [visibleOpen, setVisibleOpen] = React.useState(false);
     let audio = new Audio(lagu)
     let tl = new TimelineLite({
         scrollTrigger: {
@@ -36,6 +37,8 @@ export default function Home(props) {
     React.useEffect(() => {
         tl.fromTo('.front-page', {clipPath: 'circle(5%', border: 'none'}, {clipPath: 'circle(60%', border: 'none', overflow: 'hidden', background: 'transparent'})
         tl.fromTo('.music-note', {scale: 0.5}, { scale: 0, opacity: 0})
+        tl.fromTo('.video-undangan', {scale: 0.5}, { scale: 0, opacity: 0})
+        tl.fromTo('.video-undangan', {scale: 0.5}, { scale: 0, opacity: 0})
         tl.fromTo('title', { opacity: 0}, { opacity: 1})
         tl.fromTo('sub-title', { opacity: 0}, { opacity: 1})
     }, [])
@@ -50,8 +53,11 @@ export default function Home(props) {
         setMusicOn(false)
     }
     return (
-        <div className="container">
-            <div className="first-page">
+        <div>
+            {
+                visibleOpen ?
+                <div className="container">
+                    <div className="first-page">
                 <p 
                     className="brand">
                         The Wedding off
@@ -82,35 +88,42 @@ export default function Home(props) {
                             onClick={() => handlePlay()}
                         />
                 }
-            </div>
-            <div className="second-page">
-                <Profile />
-                <ProfileWanita />
-            </div>
-            <div className="third-page">
-                <Doa lagu={myRef} />
-            </div>
-            <div className="four-page">
-                <Wedding />
-            </div>
-            <div className="fifth-page">
-                <Location />
-            </div>
-            <div className="sixth-page">
-                <Countdown />
-            </div>
-            <div className="seven-page">
-                <Kado />
-            </div>
-            {/* <div className="eight-page">
-                <Ucapan />
-            </div> */}
-            <div className="nine-page">
-                <Gallery />
-            </div>
-            <div className="ten-page">
-                <Author />
-            </div>
+                </div>
+                <div className="second-page">
+                    <Profile />
+                    <ProfileWanita />
+                </div>
+                <div className="third-page">
+                    <Doa lagu={myRef} />
+                </div>
+                <div className="four-page">
+                    <Wedding />
+                </div>
+                <div className="fifth-page">
+                    <Location />
+                </div>
+                <div className="sixth-page">
+                    <Countdown />
+                </div>
+                <div className="seven-page">
+                    <Kado />
+                </div>
+                {/* <div className="eight-page">
+                    <Ucapan />
+                </div> */}
+                <div className="nine-page">
+                    <Gallery />
+                </div>
+                <div className="ten-page">
+                    <Author />
+                </div>
+                </div>
+                :
+                <div className="video-undangan" onClick={() => setVisibleOpen(true)}>
+                    <p>kosong</p>
+                </div>
+            }
+            
         </div>
     )
 };

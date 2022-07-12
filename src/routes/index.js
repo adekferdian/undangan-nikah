@@ -7,13 +7,12 @@ import {
     Routes,
     useLocation
 } from "react-router-dom";
-import Home from '../pages/Home';
+import Home from '../pages/adek/Home';
 
 export default function QueryParamsExample(props) {
-    console.log(props);
     return (
       <Router>
-        <QueryParamsDemo name={props.name} />
+        <QueryParamsDemo to={props.to} />
       </Router>
     );
   }
@@ -27,7 +26,6 @@ export default function QueryParamsExample(props) {
   }
   
   function QueryParamsDemo(nama) {
-      console.log(nama);
     let query = useQuery();
   
     return (
@@ -36,37 +34,32 @@ export default function QueryParamsExample(props) {
           {/* <h2>Accounts</h2> */}
           {/* <ul>
             <li>
-              <Link to="/for?name=${name}">Netflix</Link>
+              <Link to="/for?to=${to}">Netflix</Link>
             </li>
             <li>
-              <Link to="/for?name=zillow-group">Zillow Group</Link>
+              <Link to="/for?to=zillow-group">Zillow Group</Link>
             </li>
             <li>
-              <Link to="/for?name=yahoo">Yahoo</Link>
+              <Link to="/for?to=yahoo">Yahoo</Link>
             </li>
             <li>
-              <Link to="/for?name=modus-create">Modus Create</Link>
+              <Link to="/for?to=modus-create">Modus Create</Link>
             </li>
           </ul> */}
   
-          <Child name={query.get("name")} />
+          <Child to={query.get("to")} />
         </div>
       </div>
     );
   }
   
-  function Child({ name }) {
-    console.log(name);
+  function Child({ to }) {
     return (
       <div>
-        {name ? (
-        //   <h3>
-        //     The <code>name</code> in the query string is &quot;{name}
-        //     &quot;
-        //   </h3>
-        <Home nama={name} />
+        {to ? (
+        <Home to={to} />
         ) : (
-          <h3>There is no name in the query string</h3>
+          <h3>There is no to in the query string</h3>
         )}
       </div>
     );
