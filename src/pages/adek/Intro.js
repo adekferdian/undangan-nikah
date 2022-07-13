@@ -5,7 +5,7 @@ import "./intro.css";
 const Intro = ({
 to
 }) => {
-    const [toogle, setToogle] = React.useState([])
+    const [toogle,] = React.useState([])
 
     gsap.defaults({ease: "none"});
     const tl = new TimelineLite();
