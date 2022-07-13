@@ -8,9 +8,9 @@ to
     const toogle = React.useRef([])
 
     gsap.defaults({ease: "none"});
-    const tl = new TimelineLite();
-
+    
     React.useEffect(() => {
+        const tl = new TimelineLite();
         tl
             .from(".first", {x :-200, opacity: 0,},)
             .to(".first", {x:0}, 1)
