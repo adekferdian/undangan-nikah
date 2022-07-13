@@ -29,7 +29,7 @@ to
         tl
             .from(".sixth", {x :200, opacity: 0, delay: 1},)
             .to(".sixth", {x:0}, 5.5)
-    }, [toogle])
+    }, toogle)
 
 
 
