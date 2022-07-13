@@ -2,12 +2,12 @@ import React from "react";
 import { Paper } from '@material-ui/core'
 import './doa.css';
 import surat from '../../assets/arRum21.mp3';
-import { gsap, TimelineLite, Power3 } from "gsap";
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Doa = ({
-    
+    lagu
 }) => {
 
     const [visibleButton, setVisibleButton] = React.useState(true);
@@ -31,7 +31,7 @@ const Doa = ({
                     <div className="circle">
                         {
                             visibleButton ?
-                                <img title="Play surat" className="play-surat" 
+                                <img title="Play surat" className="play-surat"  alt=""
                                         src="https://img.icons8.com/ios-filled/50/000000/play--v1.png"
                                         onClick={() => handlePlay()}
                                 />

@@ -48,7 +48,7 @@ const Mimi = ({
                     <div className="border-mimi">
                         <h1>Mempelai Wanita...</h1>
                         <h1>Izzatul Rahmi</h1>
-                        <img src={adek} id="foto-mimi" />
+                        <img src={adek} id="foto-mimi" alt="" />
                         <div className="ortu">
                             <p>Putri dari :</p>
                             <p>Bapak H.Amris Said.Dt.Bandaro Kayo (alm)</p>
@@ -62,7 +62,7 @@ const Mimi = ({
                     <div className="border-adek">
                         <h1>Mempelai Pria...</h1>
                         <h1>Adek Ferdian</h1>
-                        <img src={adek} id="foto-adek" />
+                        <img src={adek} id="foto-adek" alt="" />
                         <div className="ortu">
                             <p>Putra dari :</p>
                             <p>Bapak Yasrul</p>
