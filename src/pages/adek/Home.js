@@ -12,7 +12,7 @@ const Home = ({
         const a = document.getElementsByClassName("my-video");
         console.log(a);
         for (let i = 0; i < a.length; i++) {
-            a[i].style.transition = "4s ease";
+            a[i].style.transition = "2s ease";
             a[i].style.opacity = "0.5";
             a[i].style.marginTop = "-100%";
             a[i].style.backgroundColor = "black";

@@ -11,9 +11,9 @@ export default function Doa(props) {
 
     let tl = new TimelineLite({
         scrollTrigger: {
-            trigger: '.profile',
-            start: '270%',
-            end: '280%',
+            trigger: '.intro',
+            // start: '270%',
+            // end: '280%',
             scrub: true,
         }
     })
@@ -25,7 +25,7 @@ export default function Doa(props) {
     }
 
     React.useEffect(() => {
-        tl.fromTo('.isi', {opacity: 0, x: '-50%'}, {opacity: 1, x: '0%'})
+        // tl.fromTo('.isi', {opacity: 0, x: '-50%'}, {opacity: 1, x: '0%'})
     }, [])
     return (
         <Paper>

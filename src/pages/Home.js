@@ -22,7 +22,7 @@ export default function Home(props) {
     const [musicOn, setMusicOn] = React.useState("");
     const [autoPlay, setAutoplay] = React.useState(false);
     const myRef = useRef();
-    const [visibleOpen, setVisibleOpen] = React.useState(false);
+    const [visibleOpen, setVisibleOpen] = React.useState(true);
     let audio = new Audio(lagu)
     let tl = new TimelineLite({
         scrollTrigger: {
