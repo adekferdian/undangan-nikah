@@ -202,6 +202,11 @@
         color: red;
         font-size: 20px;
     }
+    .wrapper-video {
+        /* position: relative; */
+        background: black;
+        height: 100vh;
+    }
 }
 
 @media only screen and (max-width: 747px) and (min-width: 700px) {
@@ -278,5 +283,11 @@
 
     #text-undangan {
         font-size: 11px;
+    }
+
+    .wrapper-video {
+        /* position: relative; */
+        background: black;
+        height: 100vh;
     }
 }

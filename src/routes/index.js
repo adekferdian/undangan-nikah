@@ -4,6 +4,7 @@ import {
     useLocation
 } from "react-router-dom";
 import Home from '../pages/adek/Home';
+import "./index.css";
 
 export default function QueryParamsExample(props) {
     return (
