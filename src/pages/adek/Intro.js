@@ -5,7 +5,7 @@ import "./intro.css";
 const Intro = ({
 to
 }) => {
-    const [toogle,] = React.useState([])
+    const toogle = React.useRef([])
 
     gsap.defaults({ease: "none"});
     const tl = new TimelineLite();
@@ -29,7 +29,7 @@ to
         tl
             .from(".sixth", {x :200, opacity: 0, delay: 1},)
             .to(".sixth", {x:0}, 5.5)
-    }, toogle)
+    }, [toogle])
 
 
 
