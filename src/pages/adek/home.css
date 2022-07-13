@@ -288,6 +288,10 @@
     .wrapper-video {
         /* position: relative; */
         background: black;
-        height: 100vh;
+        height: 50vh;
+    }
+    .home {
+        height: 50vh;
+        background: red;
     }
 }
