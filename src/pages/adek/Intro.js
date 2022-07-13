@@ -5,15 +5,10 @@ import "./intro.css";
 const Intro = ({
 to
 }) => {
+    const [toogle, setToogle] = React.useState([])
 
     gsap.defaults({ease: "none"});
     const tl = new TimelineLite();
-    let tweenTarget = React.useRef(null);
-    let tweenTarget1 = React.useRef(null);
-    let tweenTarget2 = React.useRef(null);
-    let tweenTarget3 = React.useRef(null);
-    let tweenTarget4 = React.useRef(null);
-    let tweenTarget5 = React.useRef(null);
 
     React.useEffect(() => {
         tl
@@ -34,29 +29,29 @@ to
         tl
             .from(".sixth", {x :200, opacity: 0, delay: 1},)
             .to(".sixth", {x:0}, 5.5)
-    }, [])
+    }, [toogle])
 
 
 
     return (
         <div className="intro">
             <div className="wrapper-intro">
-                <div className="first" ref={e => tweenTarget = e}>
+                <div className="first" >
                     <h2>Assalammu'alaikum Warahmatullahi Wabarakatuh</h2>
                 </div>
-                <div className="second" ref={e => tweenTarget1 = e}>
+                <div className="second">
                     <h2>Tanpa mengurangi rasa hormat, Kami mengundang Bapak/Ibu/Saudara/i</h2>
                 </div>
-                <div className="third" ref={e => tweenTarget2 = e}>
+                <div className="third">
                     <h2 style={{textTransform: "uppercase"}}>{to}</h2>
                 </div>
-                <div className="fourth" ref={e => tweenTarget3 = e}>
+                <div className="fourth">
                     <h2>Untuk Menghadiri Acara Pernikahan Kami</h2>
                 </div>
-                <div className="fifth" ref={e => tweenTarget4 = e}>
+                <div className="fifth">
                     <h2>Yang InsyaAllah akan dilaksanakan pada:</h2>
                 </div>
-                <div className="sixth" ref={e => tweenTarget5= e} id="time" >
+                <div className="sixth"  id="time" >
                     <h2>Jum'at 22 Juli 2022</h2>
                     <h2>08:00 - Selesai</h2>
                     <h2>Cluster Acacia Blok K27</h2>
