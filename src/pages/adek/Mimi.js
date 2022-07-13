@@ -7,7 +7,7 @@ import Doa from "./Doa";
 gsap.registerPlugin(ScrollTrigger);
 
 const Mimi = ({
-
+to
 }) => {
 
     const myRef = React.useRef();
