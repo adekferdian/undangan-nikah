@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Countdown() {
+    const [a, setA] = React.useState("");
     // let tl = new TimelineLite({
     //     scrollTrigger: {
     //         trigger: '.countdown',
@@ -33,6 +34,7 @@ export default function Countdown() {
             const seconds = Math.floor(distance % (1000 * 60) / 1000);
 
             if (distance < 0) {
+                setA(interval.current)
                 clearInterval(interval.current);
             } else {
                 setTimerDays(days);
@@ -53,9 +55,9 @@ export default function Countdown() {
     React.useEffect(() => {
         startTimer();
         return () => {
-            clearInterval(interval.current);
+            clearInterval(a);
         }
-    }, [])
+    }, [a])
 
     return (
         <div className="countdown">
