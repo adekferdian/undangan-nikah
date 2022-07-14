@@ -40,7 +40,7 @@ export default function Countdown() {
         let tl = new TimelineLite({
             scrollTrigger: {
                 trigger: '.wedding',
-                start: '30%',
+                start: '40%',
                 end: '70%',
                 scrub: true,
             }
