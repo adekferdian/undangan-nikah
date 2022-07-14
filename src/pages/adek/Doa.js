@@ -2,7 +2,7 @@ import React from "react";
 import { Paper } from '@material-ui/core'
 import './doa.css';
 import surat from '../../assets/arRum21.mp3';
-import { gsap } from "gsap";
+import { gsap, TimelineLite } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,6 +20,19 @@ const Doa = ({
             setVisibleButton(true);
         }, 58000)
     };
+
+    React.useEffect(() => {
+        let tl = new TimelineLite({
+            scrollTrigger: {
+                trigger: '.border-adek',
+                start: '20%',
+                end: '80%',
+                scrub: true,
+            }
+        })
+        tl.fromTo('.paper', {opacity: 0, x: '-50%'}, {opacity: 1, x: '0%'})
+        tl.fromTo('.terjemahan', {opacity: 0, x: '50%'}, {opacity: 1, x: '0%'})
+    }, [])
     
     return (
         <div className="isi">

@@ -1,13 +1,11 @@
 import React from "react";
 import { gsap, TimelineLite } from 'gsap';
-import Doa from "./Doa";
 import "./intro.css";
 import Mimi from "./Mimi";
 
 const Intro = ({
 to
 }) => {
-    const myRef = React.useRef();
     const toogle = React.useRef([])
 
     gsap.defaults({ease: "none"});
@@ -63,9 +61,6 @@ to
             </div>
             <div className="mimi">
                 <Mimi />
-            </div>
-            <div className="doa">
-                <Doa lagu={myRef} />
             </div>
         </div>
     )

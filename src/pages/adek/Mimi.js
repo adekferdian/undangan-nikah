@@ -21,7 +21,6 @@ to
                 start: '-50%',
                 end: '10%',
                 scrub: true,
-                markers: true
             }
         })
         let tl2 = new TimelineLite({
@@ -30,7 +29,6 @@ to
                 start: '-100%',
                 end: '0%',
                 scrub: true,
-                markers: true
             }
         })
         tl.fromTo('.border-mimi', {scale: 0.5, opacity: 0}, { scale: 1, opacity: 1})
