@@ -31,14 +31,16 @@ to
                 scrub: true,
             }
         })
-        tl.fromTo('.border-mimi', {scale: 0.5, opacity: 0}, { scale: 1, opacity: 1})
-        tl2.fromTo('.border-adek', {scale: 0.5, opacity: 0}, { scale: 1, opacity: 1})
-        // tl.fromTo('.front-page', {clipPath: 'circle(5%', border: 'none'}, {clipPath: 'circle(60%', border: 'none', overflow: 'hidden', background: 'transparent'})
-        // tl.fromTo('.music-note', {scale: 0.5}, { scale: 0, opacity: 0})
-        // tl.fromTo('.video-undangan', {scale: 0.5}, { scale: 0, opacity: 0})
-        // tl.fromTo('.video-undangan', {scale: 0.5}, { scale: 0, opacity: 0})
-        // tl.fromTo('title', { opacity: 0}, { opacity: 1})
-        // tl.fromTo('sub-title', { opacity: 0}, { opacity: 1})
+        tl.fromTo('.border-mimi', {x: -100, opacity: 0}, {x:0, opacity: 1})
+        tl.fromTo('#mims', {x: 100, opacity: 0}, {x:0, opacity: 1, delay: .1})
+        tl.fromTo('#foto-mimi', {x: 100, opacity: 0}, {x:0, opacity: 1, delay: .2})
+        tl.fromTo('#ortu-mimi', {x: -100, opacity: 0}, {x:0, opacity: 1, delay: .3})
+        tl2.fromTo('.border-adek', {x: -100, opacity: 0}, {x:0, opacity: 1})
+        tl2.fromTo('#adekf', {x: 100, opacity: 0}, {x:0, opacity: 1, delay: .1})
+        tl2.fromTo('#foto-adek', {x: 100, opacity: 0}, {x:0, opacity: 1, delay: .2})
+        tl2.fromTo('#ortu-adek', {x: -100, opacity: 0}, {x:0, opacity: 1, delay: .3})
+        
+        
     }, [])
 
     return (
@@ -47,10 +49,10 @@ to
                 <div>
                     <div className="border-mimi">
                         <h1 className="mempelai">Mempelai Wanita...</h1>
-                        <h1 className="our">Izzatul Rahmi</h1>
+                        <h1 className="our" id="mims">Izzatul Rahmi</h1>
                         <img src={adek} id="foto-mimi" alt="" />
-                        <div className="ortu">
-                            <p>Putri dari :</p>
+                        <div className="ortu" id="ortu-mimi">
+                            <p className="putra">Putri dari :</p>
                             <p>Bapak H.Amris Said.Dt.Bandaro Kayo (alm)</p>
                             <p>Ibu Hj.Ertati (almh)</p>
                         </div>
@@ -61,10 +63,10 @@ to
                 <div>
                     <div className="border-adek">
                         <h1 className="mempelai">Mempelai Pria...</h1>
-                        <h1 className="our">Adek Ferdian</h1>
+                        <h1 className="our" id="adekf">Adek Ferdian</h1>
                         <img src={adek} id="foto-adek" alt="" />
-                        <div className="ortu">
-                            <p>Putra dari :</p>
+                        <div className="ortu" id="ortu-adek">
+                            <p className="putra">Putra dari :</p>
                             <p>Bapak Yasrul</p>
                             <p>Ibu Syafni (almh)</p>
                         </div>

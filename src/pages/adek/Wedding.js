@@ -1,32 +1,32 @@
 import React from 'react';
 import './wedding.css';
 import cincin from '../../assets/cincin1.png'
-import { gsap } from "gsap";
+import { gsap, TimelineLite } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 
 export default function Wedding() {
-    // let tl = new TimelineLite({
-    //     scrollTrigger: {
-    //         trigger: '.intro',
-    //         // start: '320%',
-    //         // end: '350%',
-    //         // scrub: true,
-    //     }
-    // });
-
+    
     React.useEffect(() => {
-        // tl.fromTo('.wedding', {opacity: 0, x: '-50%'}, {opacity: 1, x: '0%'})
-        // tl.fromTo('.bg', {opacity: 0, scale: 0}, {opacity: 0.2, x: '0%', scale: 1})
-        // tl.fromTo('#cincin', {opacity: 0, scale: 0}, {opacity: 1, x: '0%', scale: 1})
-        // tl.fromTo('.akad', {opacity: 0, x: '-50%'}, {opacity: 1, x: '0%'})
-        // tl.fromTo('.nikah', {opacity: 0, scale: 0.2}, {opacity: 1, scale: 1})
-        // tl.fromTo('.isian', {opacity: 0, scale: 0.2}, {opacity: 1, scale: 1})
-        // tl.fromTo('.resepsi1', {opacity: 0, x: '-50%'}, {opacity: 1, x: '0%'})
-        // tl.fromTo('#resepsi1', {opacity: 0, scale: 0.2}, {opacity: 1, scale: 1})
-        // tl.fromTo('.resepsi2', {opacity: 0, x: '-50%'}, {opacity: 1, x: '0%'})
-        // tl.fromTo('#resepsi2', {opacity: 0, scale: 0.2}, {opacity: 1, scale: 1})
+        let tl = new TimelineLite({
+            scrollTrigger: {
+                trigger: '.doa',
+                start: '20%',
+                end: '100%',
+                scrub: true,
+            }
+        });
+        
+        tl.fromTo('.konten', {opacity: 0, x: -100}, {opacity: 1, x: '0%', scale: 1,})
+        tl.fromTo('#cincin', {opacity: 0, scale: 0}, {opacity: 1, x: '0%', scale: 1})
+        tl.fromTo('.akad', {opacity: 0, x: '-50%'}, {opacity: 1, x: '0%'})
+        tl.fromTo('.nikah', {opacity: 0, scale: 0.2}, {opacity: 1, scale: 1})
+        tl.fromTo('.isian', {opacity: 0, scale: 0.2}, {opacity: 1, scale: 1})
+        tl.fromTo('.resepsi1', {opacity: 0, x: '-50%'}, {opacity: 1, x: '0%'})
+        tl.fromTo('#resepsi1', {opacity: 0, scale: 0.2}, {opacity: 1, scale: 1})
+        tl.fromTo('.resepsi2', {opacity: 0, x: '-50%'}, {opacity: 1, x: '0%'})
+        tl.fromTo('#resepsi2', {opacity: 0, scale: 0.2}, {opacity: 1, scale: 1})
     }, [])
     return (
         <div className="wedding">

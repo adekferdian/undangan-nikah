@@ -1,19 +1,11 @@
 import React, { useRef } from 'react';
 import './countdown.css';
-import { gsap, } from "gsap";
+import { gsap, TimelineLite } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Countdown() {
     const [a, setA] = React.useState("");
-    // let tl = new TimelineLite({
-    //     scrollTrigger: {
-    //         trigger: '.countdown',
-    //         start: '500%',
-    //         end: '540%',
-    //         scrub: true,
-    //     }
-    // })
     const [timerDays, setTimerDays] = React.useState("");
     const [timerHours, setTimerHours] = React.useState("");
     const [timerMinutes, setTimerMinutes] = React.useState("");
@@ -45,11 +37,20 @@ export default function Countdown() {
         }, 1000)
     }
     React.useEffect(() => {
-        // tl.fromTo('.countdown', {opacity: 0, scale: 0, x: '-50%'}, {opacity: 1, scale: 1, x: 0})
-        // tl.fromTo('.header', {opacity: 0, scale: 0}, {opacity: 1, scale: 1})
-        // tl.fromTo('.day', {opacity: 0, scale: 0}, {opacity: 1, scale: 1})
-        // tl.fromTo('.deskripsi', {opacity: 0, scale: 0}, {opacity: 1, scale: 1})
-        // tl.fromTo('.time', {opacity: 0, scale: 0, x: '-50%'}, {opacity: 1, scale: 1, x: 0})
+        let tl = new TimelineLite({
+            scrollTrigger: {
+                trigger: '.wedding',
+                start: '30%',
+                end: '75%',
+                scrub: true,
+            }
+        })
+        tl.fromTo('.countdown-content', {opacity: 0, x: '-100%'}, {opacity: 1, x: 0})
+        tl.fromTo('.header', {opacity: 0, scale: 0}, {opacity: 1, scale: 1})
+        tl.fromTo('.counting', {opacity: 0, scale: 0}, {opacity: 1, scale: 1})
+        tl.fromTo('.day', {opacity: 0, scale: 0}, {opacity: 1, scale: 1})
+        tl.fromTo('.deskripsi', {opacity: 0, scale: 0}, {opacity: 1, scale: 1})
+        tl.fromTo('.time', {opacity: 0, scale: 0, x: '-50%'}, {opacity: 1, scale: 1, x: 0})
     }, [])
 
     React.useEffect(() => {
