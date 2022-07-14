@@ -50,4 +50,16 @@
     .ortu {
         color: whitesmoke;
     }
+
+    .mempelai {
+        color: #EDC6A4;
+        font-size: 3rem;
+        font-family: 'Great Vibes', cursive;
+    }
+
+    .our {
+        text-align: end;
+        color: whitesmoke;
+        font-weight: 800;
+    }
 }

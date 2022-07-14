@@ -35,7 +35,7 @@ to
     }, [toogle])
 
     return (
-        <div>
+        <div style={{position: "relative"}}>
             <div className="intro">
                 <div className="wrapper-intro">
                     <div className="first" >

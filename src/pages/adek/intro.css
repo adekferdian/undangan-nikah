@@ -8,8 +8,13 @@
 }
 
 .mimi {
-    height: 100vh;
+    height: 120vh;
 }
+
+.doa {
+    height: 50vh;
+}
+
 
 .wrapper-intro {
     width: 90%;

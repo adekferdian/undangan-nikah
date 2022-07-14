@@ -1,0 +1,232 @@
+
+@media only screen and (max-width: 667px) and (min-width: 377px) {
+    .countdown {
+        height: 80vh;
+        /* position: relative; */
+        background: #485563;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .countdown-content {
+        /* position: absolute; */
+        /* top: 3rem; */
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 85%;
+        margin: auto;
+    }
+    .tick {
+        width: 80%;
+        margin: auto;
+    }
+    .header {
+        text-align: center;
+        margin-top: 20px;
+        color: whitesmoke;
+    }
+    .img-header {
+        width: 80px;
+        height: 80px;
+        color: whitesmoke;
+    }
+    .day {
+        display: flex;
+        font-family: 'Great Vibes', cursive;
+        font-size: 3rem;
+        letter-spacing: 4px;
+    }
+    .counting {
+        width: 100%;
+        font-family: 'Great Vibes', cursive;
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .title-header {
+        position: relative;
+        font-family: 'Great Vibes', cursive;
+        color: #EDC6A4;
+        text-align: center;
+    }
+    .deskripsi {
+        text-align: center;
+    }
+    .isi-deskripsi {
+        padding: 30px;
+        /* font-family: "Poppins"; */
+        font-size: 1.1rem;
+        color: whitesmoke;
+    }
+
+    .time {
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+        height: 15vh;
+    }
+    .days {
+        width: 70px;
+        height: 70px;
+        color: #EDC6A4;
+    }
+    .hours {
+        width: 70px;
+        height: 70px;
+        color: #EDC6A4;
+    }
+    .minutes {
+        width: 70px;
+        height: 70px;
+        color: #EDC6A4;
+    }
+    .seconds {
+        width: 70px;
+        height: 70px;
+        color: #EDC6A4;
+    }
+    .titik {
+        padding-top: 10px;
+        font-size: 3rem;
+        font-weight: 600;
+        color: whitesmoke;
+    }
+    .angka {
+        font-size: 3rem;
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+    .teks {
+        /* font-size: 1.5rem; */
+        /* font-family: "Poppins"; */
+        letter-spacing: 2px;
+        font-weight: 600;
+        padding-left: 5px;
+        color: whitesmoke;
+    }
+    #hari {
+        padding-left: 10px;
+    }
+    #jam {
+        padding-left: 10px
+    }
+}
+
+@media only screen and (max-width: 366px) {
+    .countdown {
+        height: 100vh;
+        position: relative;
+        background: #485563;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .countdown-content {
+        position: absolute;
+        top: 3rem;
+    }
+    .tick {
+        width: 80%;
+        margin: auto;
+    }
+    .header {
+        position: absolute;
+        left: 10rem;
+    }
+    .img-header {
+        width: 80px;
+        height: 80px;
+        margin-top: 30px;
+        text-align: center;
+        margin-left: -15px;
+    }
+    .day {
+        position: absolute;
+        left: 13rem;
+        top: 7rem;
+        display: flex;
+        font-family: 'Great Vibes', cursive;
+        font-size: 3.5rem;
+        letter-spacing: 4px;
+    }
+    .counting {
+        position: absolute;
+        left: 1rem;
+        top: 7rem;
+        width: 100%;
+        display: flex;
+        font-family: 'Great Vibes', cursive;
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+    }
+    .title-header {
+        display: flex;
+        position: relative;
+        font-family: 'Great Vibes', cursive;
+
+    }
+    .deskripsi {
+        width: 92vw;
+        margin: auto;
+        margin-top: 10rem;
+    }
+    .isi-deskripsi {
+        padding: 30px;
+        margin-left: 15px;
+        font-family: "Poppins";
+        font-size: 1.1rem;
+        color: black;
+    }
+
+    .time {
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+        height: 15vh;
+        margin-left: 2.3rem;
+    }
+    .days {
+        width: 70px;
+        height: 70px;
+    }
+    .hours {
+        width: 70px;
+        height: 70px;
+    }
+    .minutes {
+        width: 70px;
+        height: 70px;
+    }
+    .seconds {
+        width: 70px;
+        height: 70px;
+    }
+    .titik {
+        padding-top: 10px;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .angka {
+        font-size: 2.2rem;
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+    #angka-hari {
+        padding-left: 18px;
+    }
+    .teks {
+        font-size: 1.2rem;
+        font-family: "Poppins";
+        letter-spacing: 2px;
+        font-weight: 600;
+        padding-left: 5px;
+    }
+    #hari {
+        padding-left: 10px;
+    }
+    #jam {
+        padding-left: 10px
+    }
+}

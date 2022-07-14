@@ -4,6 +4,8 @@ import adek from "../../assets/adek.jpeg";
 import { gsap, TimelineLite } from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import Doa from "./Doa";
+import Wedding from "./Wedding";
+import Countdown from "./Countdown";
 gsap.registerPlugin(ScrollTrigger);
 
 const Mimi = ({
@@ -46,8 +48,8 @@ to
             <div className="mimi">
                 <div>
                     <div className="border-mimi">
-                        <h1>Mempelai Wanita...</h1>
-                        <h1>Izzatul Rahmi</h1>
+                        <h1 className="mempelai">Mempelai Wanita...</h1>
+                        <h1 className="our">Izzatul Rahmi</h1>
                         <img src={adek} id="foto-mimi" alt="" />
                         <div className="ortu">
                             <p>Putri dari :</p>
@@ -60,8 +62,8 @@ to
             <div className="adek">
                 <div>
                     <div className="border-adek">
-                        <h1>Mempelai Pria...</h1>
-                        <h1>Adek Ferdian</h1>
+                        <h1 className="mempelai">Mempelai Pria...</h1>
+                        <h1 className="our">Adek Ferdian</h1>
                         <img src={adek} id="foto-adek" alt="" />
                         <div className="ortu">
                             <p>Putra dari :</p>
@@ -73,6 +75,12 @@ to
             </div>
             <div className="doa">
                 <Doa lagu={myRef} />
+            </div>
+            <div className="wedding">
+                <Wedding />
+            </div>
+            <div className="countdown">
+                <Countdown />
             </div>
         </div>
     )
