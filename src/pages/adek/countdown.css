@@ -128,6 +128,7 @@
         border-radius: 10px;
         width: 85%;
         margin: auto;
+        margin-top: -20px;
     }
     .tick {
         width: 80%;
