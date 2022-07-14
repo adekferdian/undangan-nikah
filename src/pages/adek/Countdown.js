@@ -41,7 +41,7 @@ export default function Countdown() {
             scrollTrigger: {
                 trigger: '.wedding',
                 start: '30%',
-                end: '75%',
+                end: '70%',
                 scrub: true,
             }
         })

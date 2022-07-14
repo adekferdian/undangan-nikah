@@ -70,3 +70,14 @@
         text-align: center;
     }
 }
+
+
+@media only screen and (max-width: 450px) and (min-height: 910px) {
+    .adek {
+        height: 78vh;
+    }
+
+    .mimi {
+        height: 84vh;
+    }
+}
