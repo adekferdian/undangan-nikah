@@ -6,6 +6,8 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import Doa from "./Doa";
 import Wedding from "./Wedding";
 import Countdown from "./Countdown";
+import Kado from "./Kado";
+import Gallery from "./Gallery";
 gsap.registerPlugin(ScrollTrigger);
 
 const Mimi = ({
@@ -81,6 +83,12 @@ to
             </div>
             <div className="countdown">
                 <Countdown />
+            </div>
+            <div className="kado">
+                <Kado />
+            </div>
+            <div className="gallery">
+                <Gallery />
             </div>
         </div>
     )

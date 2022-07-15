@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Great+Vibes&display=swap');
+
+@media only screen and (max-width: 366px) and (min-width: 300px) {
+    /* .kado {
+        height: 50.3vh;
+        width: 90%;
+        margin: auto;
+        position: relative;
+    }
+    .badan {
+        border-radius: 10px;
+        margin-top: 20px;
+        width: 90vw;
+        height: 68vh;
+    }
+    .bg-kado {
+        background-image: url('../../assets/1.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 51.3vh;
+        width: 90vw;
+        opacity: 0.2;
+        
+        top: 8rem;
+        left: 0em;
+        overflow: hidden;
+    }
+    .gift {
+        
+        z-index: 2;
+        margin-top: -3rem;
+    }
+    .kado-title {
+        display: flex;
+        justify-content: space-between;
+        
+        top: 40px;
+        left: 2.5rem;
+    }
+    .text-title {
+        font-size: 3rem;
+        font-family: 'Great Vibes', cursive;
+        padding-left: 15px;
+        font-weight: 600;
+    }
+    .img-title {
+        width: 80px;
+        height: 80px;
+        margin-top: 7px;
+    }
+    .desc {
+        
+        top: 15rem;
+        font-family: "Poppins";
+        width: 100%;
+    }
+    .line1 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .line2 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .line3 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .click {
+        z-index: 999;
+    }
+    .donate {
+        width: 60%;
+        display: flex;
+        margin: auto;
+        border: 2px solid black;
+        background: #F5DEB3;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    .img-donate {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+    }
+    .text-donate {
+        font-size: 1.2rem;
+        padding-left: 10px;
+        padding-top: 7px;
+    } */
+}
+
+@media only screen and (max-width: 667px) and (min-width: 377px) {
+    .kado {
+        width: 100%;
+        margin: auto;
+        position: relative;
+        background: #485563;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .badan {
+        border-radius: 10px;
+        width: 85%;
+        margin: auto;
+        border: 1px solid black;
+        background: none;
+        padding-top: 20px;
+    }
+    .kado-title {
+        text-align: center;
+    }
+    .text-title {
+        font-size: 3.5rem;
+        color: #EDC6A4;
+        font-family: 'Great Vibes', cursive;
+    }
+
+    .desc {
+        text-align: center;
+        color: whitesmoke;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .gift {
+        height: 60vh;
+    }
+    
+}
