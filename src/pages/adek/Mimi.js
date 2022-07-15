@@ -1,6 +1,6 @@
 import React from "react";
 import "./mimi.css";
-import adek from "../../assets/adek.jpeg";
+import adek from "../../assets/blackWhite.jpeg";
 import { gsap, TimelineLite } from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import Doa from "./Doa";
