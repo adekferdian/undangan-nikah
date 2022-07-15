@@ -59,7 +59,7 @@ to, lagu
                         <div className="border-lokasi">
                             <div className="denah-lokasi">
                                 <h2 id="peta2">Lokasi</h2>
-                                <img onClick={""} alt="" className="pin2" src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-location-user-interface-icongeek26-linear-colour-icongeek26.png"/>
+                                <img onClick={() => window.open("https://www.google.com/maps/@-6.4207744,106.8206653,21z?hl=en")} alt="" className="pin2" src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-location-user-interface-icongeek26-linear-colour-icongeek26.png"/>
                             </div>
                         </div>
                     </div>

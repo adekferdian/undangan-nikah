@@ -117,3 +117,9 @@
     }
 }
 
+
+@media only screen and (max-width: 450px) and (min-height: 781px) {
+    .doa {
+        height: 43vh;
+    }
+}
