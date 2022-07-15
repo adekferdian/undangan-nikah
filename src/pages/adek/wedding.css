@@ -110,7 +110,7 @@
 }
 @media only screen and (max-width: 399px) and (min-width: 200px) {
     .pertama {
-        height: 80vh;
+        height: 85vh;
         padding-top: 40px;
         width: 100%;
         background: #485563;  /* fallback for old browsers */

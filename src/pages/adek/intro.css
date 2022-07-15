@@ -67,7 +67,7 @@ h2 {
         font-size: 40px;
     }
 }
-@media only screen and (max-width: 499px) and (min-width: 300px) {
+@media only screen and (max-width: 499px) and (min-width: 362px) {
     h2 {
         padding-top: 15px;
         font-size: 18px;
@@ -84,6 +84,70 @@ h2 {
         background: #485563;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to left, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        height: 75vh;
+        height: 90vh;
+    }
+
+    .denah-lokasi {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .border-lokasi {
+        width: 50%;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .pin2 {
+        animation: putar infinite;
+        animation-duration: 4s;
+    }
+    @keyframes putar {
+        50% {transform: rotateY(180deg);}
+    }
+}
+@media only screen and (max-width: 361px) and (min-width: 250px) {
+    h2 {
+        padding-top: 15px;
+        font-size: 18px;
+        color: #ddd7d7;
+    }
+    
+    #time {
+        font-size: 40px;
+    }
+
+    .intro {
+        width: 100%;
+        margin: auto;
+        background: #485563;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height: 95vh;
+    }
+
+    .denah-lokasi {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .border-lokasi {
+        width: 50%;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .pin2 {
+        animation: putar infinite;
+        animation-duration: 4s;
+    }
+    @keyframes putar {
+        50% {transform: rotateY(180deg);}
     }
 }

@@ -2,11 +2,13 @@ import React from "react";
 import mywedding from "../../assets/video/mywedding.mp4";
 import "./home.css";
 import Intro from "./Intro";
+import lagu from "../../assets/my_music.mp3";
 
 const Home = ({
     to
 }) => {
     const [visibleOpen, setVisibleOpen] = React.useState(false);
+    const myRef = React.useRef();
 
     const handleOpen = () => {
         const a = document.getElementsByClassName("my-video");
@@ -56,7 +58,13 @@ const Home = ({
                         </div>
                     </div>
                 </div>
-                : <Intro to={to} />
+                : <Intro to={to} lagu={myRef} />
+            }
+            {
+                visibleOpen ? 
+                <audio ref={myRef} id="audio" src={lagu} autoPlay >
+                    
+                </audio> : null
             }
         </div>
     )

@@ -1,6 +1,6 @@
 import React from 'react';
 import './kado.css';
-import { gsap,} from "gsap";
+import { gsap, TimelineLite} from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 gsap.registerPlugin(ScrollTrigger);
@@ -9,23 +9,24 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Kado() {
     const [copySuccess, setCopySuccess] = React.useState(false);
     const [visibleGift, setVisibleGift] = React.useState(false)
-    // let tl = new TimelineLite({
-    //     scrollTrigger: {
-    //         trigger: '.kado',
-    //         start: '580%',
-    //         end: '590%',
-    //         scrub: true,
-    //     }
-    // });
-
+    
     React.useEffect(() => {
+        let tl = new TimelineLite({
+            scrollTrigger: {
+                trigger: '.countdown',
+                start: '30%',
+                end: '40%',
+                scrub: true,
+            }
+        });
         // tl.fromTo('.kado', {opacity: 0, scale: 0, x: '-50%'}, {opacity: 1, scale: 1, x: 0})
-        // tl.fromTo('.img-title', {opacity: 0, scale: 0,}, {opacity: 1, scale: 1,})
-        // tl.fromTo('.text-title', {opacity: 0, scale: 0, x: '-50%'}, {opacity: 1, scale: 1, x: 0})
-        // tl.fromTo('.line1', {opacity: 0, scale: 0,}, {opacity: 1, scale: 1})
-        // tl.fromTo('.line2', {opacity: 0, scale: 0,}, {opacity: 1, scale: 1})
-        // tl.fromTo('.line3', {opacity: 0, scale: 0,}, {opacity: 1, scale: 1})
-        // tl.fromTo('.donate', {opacity: 0, scale: 0,}, {opacity: 1, scale: 1})
+        tl.fromTo('.badan', {opacity: 0, x: -100}, {opacity: 1, x: 0,})
+        tl.fromTo('.img-title', {opacity: 0, scale: 0,}, {opacity: 1, scale: 1,})
+        tl.fromTo('.text-title', {opacity: 0, scale: 0, x: '50%'}, {opacity: 1, scale: 1, x: 0})
+        tl.fromTo('.line1', {opacity: 0, scale: 0,}, {opacity: 1, scale: 1})
+        tl.fromTo('.line2', {opacity: 0, scale: 0,}, {opacity: 1, scale: 1})
+        tl.fromTo('.line3', {opacity: 0, scale: 0,}, {opacity: 1, scale: 1})
+        tl.fromTo('.donate', {opacity: 0, scale: 0,}, {opacity: 1, scale: 1})
     }, [])
 
     const handleonCopy = () => {

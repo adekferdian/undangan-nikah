@@ -1,7 +1,88 @@
-@media only screen and (max-width: 500px) and (min-width: 300px) {
+@media only screen and (max-width: 500px) and (min-width: 362px) {
     .mimi {
         position: relative;
         height: 100vh;
+        background: #485563;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    
+    .adek {
+        position: relative;
+        height: 100vh;
+        /* margin-top: -20px; */
+        background: #485563;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    
+    .border-mimi {
+        margin-top: -20px;
+        max-width: 500px;
+        border: 1px solid rgb(12, 12, 12);
+        width: 85%;
+        margin: auto;
+        border-radius: 10px;
+        padding: 20px;
+        /* position: relative; */
+        color: #EDC6A4;
+        min-height: 700px;
+        margin-bottom: 50px;
+    }
+    .border-adek {
+        border: 1px solid black;
+        width: 85%;
+        margin: auto;
+        border-radius: 10px;
+        padding: 20px;
+        /* position: relative; */
+        color: #EDC6A4;
+        min-height: 600px;
+    }
+
+    .gallery {
+        height: 60vh;
+        margin-top: -40px;
+        background: #485563;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    
+    #foto-mimi {
+        width: 100%;
+        min-height: 400px;
+    }
+    #foto-adek {
+        width: 100%;
+        min-height: 400px;
+    }
+    
+    .ortu {
+        color: whitesmoke;
+        text-align: center;
+    }
+
+    .mempelai {
+        color: #EDC6A4;
+        font-size: 3rem;
+        font-family: 'Great Vibes', cursive;
+    }
+
+    .our {
+        text-align: end;
+        color: whitesmoke;
+        font-weight: 800;
+    }
+
+    .putra {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 362px) and (min-width: 262px) {
+    .mimi {
+        position: relative;
+        height: 105vh;
         background: #485563;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to left, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

@@ -115,7 +115,7 @@
 
 @media only screen and (max-width: 376px) {
     .countdown {
-        /* height: 80vh; */
+        height: 82vh;
         /* position: relative; */
         background: #485563;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to left, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */

@@ -105,6 +105,10 @@
         animation: animated infinite;
         animation-duration: 2s;
     }
+
+    .doa {
+        height: 52vh;
+    }
     @keyframes animated {
         0% {border: 1px solid black;}
         25% {border: 2px solid white;}

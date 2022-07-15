@@ -1,6 +1,7 @@
 import React from "react";
 import "./mimi.css";
 import adek from "../../assets/blackWhite.jpeg";
+import adekf from "../../assets/mypic.jpeg";
 import { gsap, TimelineLite } from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import Doa from "./Doa";
@@ -11,10 +12,8 @@ import Gallery from "./Gallery";
 gsap.registerPlugin(ScrollTrigger);
 
 const Mimi = ({
-to
+lagu
 }) => {
-
-    const myRef = React.useRef();
 
     React.useEffect(() => {
         let tl = new TimelineLite({
@@ -66,7 +65,7 @@ to
                     <div className="border-adek">
                         <h1 className="mempelai">Mempelai Pria...</h1>
                         <h1 className="our" id="adekf">Adek Ferdian</h1>
-                        <img src={adek} id="foto-adek" alt="" />
+                        <img src={adekf} id="foto-adek" alt="" />
                         <div className="ortu" id="ortu-adek">
                             <p className="putra">Putra dari :</p>
                             <p>Bapak Yasrul</p>
@@ -76,7 +75,7 @@ to
                 </div>
             </div>
             <div className="doa">
-                <Doa lagu={myRef} />
+                <Doa lagu={lagu} />
             </div>
             <div className="wedding">
                 <Wedding />

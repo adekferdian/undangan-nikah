@@ -4,7 +4,7 @@ import "./intro.css";
 import Mimi from "./Mimi";
 
 const Intro = ({
-to
+to, lagu
 }) => {
     const toogle = React.useRef([])
 
@@ -56,11 +56,17 @@ to
                         <h2>08:00 - Selesai</h2>
                         <h2>Cluster Acacia Blok K27</h2>
                         <h2>Grand Depok City</h2>
+                        <div className="border-lokasi">
+                            <div className="denah-lokasi">
+                                <h2 id="peta2">Lokasi</h2>
+                                <img onClick={""} alt="" className="pin2" src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-location-user-interface-icongeek26-linear-colour-icongeek26.png"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div className="mimi">
-                <Mimi />
+                <Mimi lagu={lagu} />
             </div>
         </div>
     )

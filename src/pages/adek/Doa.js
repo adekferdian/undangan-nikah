@@ -14,10 +14,11 @@ const Doa = ({
     const audio = new Audio(surat);
     const handlePlay = () => {
         setVisibleButton(false);
-        // audio.current.pause()
+        lagu.current.pause()
         audio.play()
         setTimeout(() => {
             setVisibleButton(true);
+            lagu.current.play()
         }, 58000)
     };
 
